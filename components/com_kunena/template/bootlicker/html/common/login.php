@@ -10,6 +10,7 @@
  **/
 defined ( '_JEXEC' ) or die ();
 ?>
+<!--
 <div class="well well-small">
 	 <div class="row-fluid column-row">
        	  <div class="span12 column-item">
@@ -49,7 +50,6 @@ defined ( '_JEXEC' ) or die ();
 				</form>
 				<?php endif; ?>
 			</td>
-			<!-- Module position -->
 			<?php if ($this->moduleHtml) : ?>
 			<td class = "kprofilebox-right">
 				<div class="kprofilebox-modul">
@@ -60,4 +60,5 @@ defined ( '_JEXEC' ) or die ();
 		</div>
 	</div>
 </div>
+-->
 <div class="well well-small">

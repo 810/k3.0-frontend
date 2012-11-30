@@ -40,12 +40,12 @@ defined ( '_JEXEC' ) or die ();
 
 <div class="well">
 		<?php if (!empty($this->topicActions)) : ?>
-		<span class="kcheckbox select-toggle"><input class="kcheckall" type="checkbox" name="toggle" value="" /></span>
+		<span class="pull-right "><input class="kcheckall" type="checkbox" name="toggle" value="" /></span>
 		<?php endif; ?>
 		<h2><span><?php echo $this->escape($this->headerText); ?></span></h2>
 	<div class="row-fluid column-row">
        	  <div class="span12 column-item">
-				<table class="span12">
+				<table  style="width:100%;">
 					<?php if (empty ( $this->topics ) && empty ( $this->subcategories )) : ?>
 					<tr><td class="kcol-first"><?php echo JText::_('COM_KUNENA_VIEW_NO_POSTS') ?></td></tr>
 
@@ -84,7 +84,7 @@ defined ( '_JEXEC' ) or die ();
             <a href="#forumtop" rel="nofollow"><span class="divider"><i class="icon-arrow-up hasTooltip"></i></a>
 		</td>
 		<?php $this->displayCategoryActions() ?>
-		<td class="klist-pages-all"><?php echo $this->getPagination (7); // odd number here (# - 2) ?></td>
+		<td class="pagination pagination-right"><?php echo $this->getPagination (7); // odd number here (# - 2) ?></td>
 	</tr>
 </table>
 

@@ -24,19 +24,12 @@ defined ( '_JEXEC' ) or die ();
 										
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-large icon-user"></i> <b class="caret"><img src="<?php echo $this->useravatar; ?>" /></b></a>
 										<ul class="dropdown-menu dropdown-user-account" style="min-width:400px;">
-											<li class="account-img-container">
-												<img class="img-polaroid" src="<?php echo $this->useravatar; ?>" />
-											</li>
-											<li class="account-info">
-												<h3>Geunevere Calista</h3>
-												<h4>Rank: Administrator</h4>
-                                                <h4>Inbox: 3</h4>
-												<p><a href="#">Edit</a> | <a href="#">Privacy Settings</a></p>
-											</li>
-											<li class="account-footer">
-														<a class="btn btn-primary btn-small" style="color:#FFF !important;" href="#">Change avatar</a> <a class="btn btn-primary btn-small" style="color:#FFF !important; " href="#">View profile</a>
-														<a class="btn btn-danger btn-small" style="color:#FFF !important;"  href="#">Logout</a>																
-											</li>
+											<span class="login-member">
+									<span class="login-avatar"><?php echo $this->me->getAvatarImage('kavatar', 'welcome') ?></span>
+									<span class="loginbox">
+										<span class="login-welcome"><?php echo JText::sprintf('COM_KUNENA_VIEW_COMMON_LOGOUT_WELCOME', $this->me->getName(null, JText::_('COM_KUNENA_VIEW_COMMON_LOGOUT_OWN_LINK_TITLE'))) ?></span>
+									</span>
+								</span>
                                          </ul>
                                     </li>
 								</ul>

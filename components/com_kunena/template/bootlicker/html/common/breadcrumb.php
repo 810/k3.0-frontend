@@ -12,9 +12,10 @@ defined ( '_JEXEC' ) or die ();
 
 $item = array_shift($this->pathway);
  if ($item) : ?>
+ 
 	<div class="row-fluid column-row">
        	  <div class="span12 column-item">
-             <ul class="breadcrumb">
+             <ul class="breadcrumb" style="border:1px solid #E3E3E3;">
 				<li class="active"><span class="divider"><i class="icon-location hasTooltip"></i><a href="<?php echo $item->link ?>"><?php echo $item->name ?></a></span></li>
 				<?php foreach($this->pathway as $item) : ?>
                 <span class="divider">/</span>
@@ -22,5 +23,6 @@ $item = array_shift($this->pathway);
 				<?php endforeach; ?>
               </ul>
 		   </div>
+           
 	</div>
 <?php endif ?>

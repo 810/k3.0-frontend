@@ -36,7 +36,7 @@ foreach ( $this->sections as $section ) :
 		foreach ( $this->categories [$section->id] as $category ) {
 	?>
 		<tr class="well well-small">
-			<td class="span1">
+			<td class="span1 hidden-phone">
 				<?php echo $this->getCategoryLink($category, $this->getCategoryIcon($category), '') ?>
 			</td>
 
