@@ -21,6 +21,12 @@ foreach ( $this->sections as $section ) :
 		<?php if (count($this->sections) > 0) : ?>
 		<span class="ktoggler"><a class="ktoggler close" title="<?php echo JText::_('COM_KUNENA_TOGGLER_COLLAPSE') ?>" rel="catid_<?php echo intval($section->id) ?>"></a></span>
 		<?php endif; ?>
+        <div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <i class="icon-cog"></i> <span class="caret"></span> </a>
+								<ul class="dropdown-menu actions">
+																					<li class="edit-icon"> <a href="/newcase/index.php?option=com_kunena" ><i class="hasTip icon-edit tip" title="Edit Article :: Published&lt;br /&gt;Saturday, 01 January 2011&lt;br /&gt;Written by Super User"></i> Edit</a> </li>
+									</ul>
+			</div>
 		<h2><span><?php echo $this->GetCategoryLink ( $section, $this->escape($section->name) ); ?></span></h2>
 		<?php if (!empty($section->description)) : ?>
 		<div class="ktitle-desc km hidden-phone">
@@ -36,7 +42,7 @@ foreach ( $this->sections as $section ) :
 		foreach ( $this->categories [$section->id] as $category ) {
 	?>
 		<tr class="well well-small">
-			<td class="span1">
+			<td class="span1 hidden-phone">
 				<?php echo $this->getCategoryLink($category, $this->getCategoryIcon($category), '') ?>
 			</td>
 

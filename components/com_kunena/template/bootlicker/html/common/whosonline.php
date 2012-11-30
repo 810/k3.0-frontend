@@ -19,9 +19,6 @@ defined ( '_JEXEC' ) or die ();
 <div class="span12 column-item">
 
 <div class="krow2">
-			<div class = "kcol-first">
-				<div class="kwhoicon"></div>
-			</div>
 			<td class = "kcol-mid km">
 				<div class="kwhoonline kwho-total ks"><?php  echo JText::sprintf('COM_KUNENA_VIEW_COMMON_WHO_TOTAL', $this->membersOnline) ?></div>
 				<div>
@@ -45,12 +42,12 @@ defined ( '_JEXEC' ) or die ();
 				</div>
 				<div class="kwholegend ks">
 					<span><?php echo JText::_('COM_KUNENA_LEGEND'); ?>:</span>&nbsp;
-					<span class = "kwho-admin" title = "<?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?></span>,&nbsp;
-					<span class = "kwho-globalmoderator" title = "<?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?></span>,&nbsp;
-					<span class = "kwho-moderator" title = "<?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?></span>,&nbsp;
-					<span class = "kwho-banned" title = "<?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?></span>,&nbsp;
-					<span class = "kwho-user" title = "<?php echo JText::_('COM_KUNENA_COLOR_USER'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_USER'); ?></span>,&nbsp;
-					<span class = "kwho-guest" title = "<?php echo JText::_('COM_KUNENA_COLOR_GUEST'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_GUEST'); ?></span>
+					<span title="<?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=admin" class="kwho-admin"/> <?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?></a></span>,&nbsp;
+					<span title="<?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=globalmoderator" class="kwho-globalmoderator"/> <?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?></a></span>,&nbsp;
+					<span title="<?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=moderator" class="kwho-moderator"/> <?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?></a></span>,&nbsp;
+					<span title="<?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=banned" class="kwho-banned"/> <?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?></a></span>,&nbsp;
+					<span title="<?php echo JText::_('COM_KUNENA_COLOR_USER'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=user" class="kwho-user"/> <?php echo JText::_('COM_KUNENA_COLOR_USER'); ?></a></span>,&nbsp;
+					<span class="kwho-guest" title="<?php echo JText::_('COM_KUNENA_COLOR_GUEST'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_GUEST'); ?></span>
 				</div>
 		</div>
         </td>
