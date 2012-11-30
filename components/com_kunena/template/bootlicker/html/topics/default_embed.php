@@ -22,7 +22,7 @@ defined ( '_JEXEC' ) or die ();
 		<h2 class="page-header"><span><?php echo $this->escape($this->headerText); ?></span></h2>
 	<div class="row-fluid column-row">
        	  <div class="span12 column-item">
-				<table style="width:100%">
+				<table  id="kflattable">
 
 					<?php if (empty ( $this->topics ) && empty ( $this->subcategories )) : ?>
 					<tr class="krow2"><td class=""><?php echo JText::_('COM_KUNENA_VIEW_NO_POSTS') ?></td></tr>

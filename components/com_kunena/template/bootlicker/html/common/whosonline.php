@@ -19,6 +19,9 @@ defined ( '_JEXEC' ) or die ();
 <div class="span12 column-item">
 
 <div class="krow2">
+			<div class = "kcol-first">
+				<div class="kwhoicon"></div>
+			</div>
 			<td class = "kcol-mid km">
 				<div class="kwhoonline kwho-total ks"><?php  echo JText::sprintf('COM_KUNENA_VIEW_COMMON_WHO_TOTAL', $this->membersOnline) ?></div>
 				<div>
@@ -42,7 +45,7 @@ defined ( '_JEXEC' ) or die ();
 				</div>
 				<div class="kwholegend ks">
 					<span><?php echo JText::_('COM_KUNENA_LEGEND'); ?>:</span>&nbsp;
-					<span class = "kwho-admin" title = "<?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?>"><a href="index.php?option=com_kunena&view=search&searchgroup=admin"/> <?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?></a></span>,&nbsp;
+					<span class = "kwho-admin" title = "<?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_ADMINISTRATOR'); ?></span>,&nbsp;
 					<span class = "kwho-globalmoderator" title = "<?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_GLOBAL_MODERATOR'); ?></span>,&nbsp;
 					<span class = "kwho-moderator" title = "<?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_MODERATOR'); ?></span>,&nbsp;
 					<span class = "kwho-banned" title = "<?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?>"> <?php echo JText::_('COM_KUNENA_COLOR_BANNED'); ?></span>,&nbsp;

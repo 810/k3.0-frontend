@@ -22,6 +22,11 @@ $this->cache = false;
 <?php endif; ?>
 
 <tr >
+
+	<td class="kcol-first kcol-ktopicreplies">
+		<strong><?php echo $this->formatLargeNumber ( max(0,$this->topic->getTotal()-1) ); ?></strong> <?php echo JText::_('COM_KUNENA_GEN_REPLIES') ?>
+	</td>
+
 	<td class="kcol-mid kcol-ktopicicon">
 		<?php echo $this->getTopicLink ( $this->topic, 'unread', $this->topic->getIcon() ) ?>
 	</td>
@@ -48,10 +53,10 @@ $this->cache = false;
 		<div class="ktopic-details">
 			<span class="ktopic-category"> <?php echo JText::sprintf('COM_KUNENA_CATEGORY_X', $this->getCategoryLink ( $this->topic->getCategory() ) ) ?></span>
 		</div>
-            <div class="pagination pagination-right" style="clear:both;">
+            <div class="ktopic-details-kcategory" style="clear:both;">
 		<?php if ($this->pages > 1) : ?>
-		<ul >
-			<li><?php echo JText::_('COM_KUNENA_PAGE') ?></li>
+		<ul class="pagination">
+			<li class="page"><?php echo JText::_('COM_KUNENA_PAGE') ?></li>
 			<li><?php echo $this->GetTopicLink ( $this->topic, 0, 1 ) ?></li>
 			<?php if ($this->pages > 4) : $startPage = $this->pages - 3; ?>
 			<li class="more">...</li>
@@ -71,8 +76,8 @@ $this->cache = false;
 	</td>
 
 	<td class="kcol-mid kcol-ktopicviews visible-desktop">
-		<span><?php echo  JText::_('COM_KUNENA_GEN_HITS').':'.$this->formatLargeNumber ( $this->topic->hits ) ;?></span> 
-        <span><?php echo  JText::_('COM_KUNENA_GEN_REPLIES').':'.$this->formatLargeNumber ( max(0,$this->topic->getTotal()-1) );?></span>
+		<span class="ktopic-views-number"><?php echo $this->formatLargeNumber ( $this->topic->hits );?></span>
+		<span class="ktopic-views"> <?php echo JText::_('COM_KUNENA_GEN_HITS');?> </span>
 	</td>
 
 	<td class="kcol-mid kcol-ktopiclastpost">

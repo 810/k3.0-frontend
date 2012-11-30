@@ -26,6 +26,7 @@
 	cursor: pointer;
 	line-height: 145%;
 	display: inline-block;
+	background-image: url("../media/iconsets/buttons/default/default.png") !important;
 	background-repeat: repeat-x;
 	border: none;
 	margin:0 5px;
@@ -318,14 +319,14 @@ Multi file upload for bbcode editor
 #Kunena kwho-total {}
 
 #Kunena .kwholegend {
-	border-top: 1px solid #E3E3E3;
+	border-top: 1px dotted;
 	width: 100%;
 	margin-top: 5px;
 	padding-top: 5px;
 }
 
 #Kunena .kwhoonline {
-	border-bottom: 1px solid #E3E3E3;
+	border-bottom: 1px dotted;
 	width: 100%;
 	padding-bottom: 5px;
 }
@@ -464,7 +465,6 @@ Multi file upload for bbcode editor
 	background: url("../images/icons/folder_nonew.png") no-repeat left center;
 	width: 32px;
 	height: 32px;
-	margin-left:15px;
 }
 #Kunena span.kunreadforum {
 	background: url("../images/icons/folder.png") no-repeat left center;
@@ -586,16 +586,6 @@ Multi file upload for bbcode editor
 	padding: 11px 10px !important;
 }
 .navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover {
-	box-shadow:none !important;
-	background:#F5F5F5 !important;
-}
-.row-fluid [class*="span"] {
-	min-height:0 !important;
-}
-form {
-margin: 0 !important;
-}
-a:focus {
-	outline: none !important;
-	outline-offset: 0px !important;
-}
+			box-shadow:none !important;
+			background:#F5F5F5 !important;
+		}
